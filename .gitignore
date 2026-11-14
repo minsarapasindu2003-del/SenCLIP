@@ -1,0 +1,5 @@
+venv/
+Datasets/
+Datasets_mini/
+*.ckpt
+__pycache__/
