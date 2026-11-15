@@ -77,8 +77,8 @@ def accuracy(output, target, topk=(1,)):
     maxk = max(topk)
     pred = output.topk(maxk, 1, True, True)[1].t()
     correct = pred.eq(target.view(1, -1).expand_as(pred))
-    return [float(correct[:k].reshape(-1).float().sum(0, keepdim=True).cpu().numpy()) for k in topk]
-
+    #return [float(correct[:k].reshape(-1).float().sum(0, keepdim=True).cpu().numpy()) for k in topk]
+    return [correct[:k].reshape(-1).float().sum().item() for k in topk]
 
 def class_wise_accuracy(logits_stk, labels_stk, class_names):
     """
