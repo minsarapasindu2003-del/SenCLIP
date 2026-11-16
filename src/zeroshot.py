@@ -45,6 +45,7 @@ def get_args():
     parser.add_argument('--template_path', type=str, default='./prompts/prompt_eurosat_aerial_mixed.json', help="prompt_template_path")
     parser.add_argument('--mean', type=list, default=(0.347, 0.376, 0.296), help="Normalization mean for images")
     parser.add_argument('--std', type=list, default=(0.269, 0.261, 0.276), help="Normalization std for images")
+    parser.add_argument('--baseline', action='store_true', help="Use plain pretrained CLIP (skip the SenCLIP checkpoint)")
 
     return parser.parse_args()
 
@@ -119,6 +120,9 @@ def load_model(weight_path, model_name, device):
 
 def main(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    if args.baseline:
+        args.mean = (0.48145466, 0.4578275, 0.40821073)
+        args.std = (0.26862954, 0.26130258, 0.27577711)
     transform = transform_img(args.mean, args.std)
 
     # Load dataset
@@ -130,7 +134,12 @@ def main(args):
     print(f"Class Names: {class_names}")
 
     # Load model
-    model = load_model(args.ckpt_path, args.model_arch, device)
+    #model = load_model(args.ckpt_path, args.model_arch, device)
+    if args.baseline:
+        model, _ = clip.load(args.model_arch, device=device)
+        model.eval()
+    else:
+        model = load_model(args.ckpt_path, args.model_arch, device)
 
     # Load prompts
     templates = json.load(open(args.template_path))
