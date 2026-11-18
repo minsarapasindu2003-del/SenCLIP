@@ -60,3 +60,7 @@ For caption generation we used [CLIPCap](https://github.com/rmokady/CLIP_prefix_
     </td>
   </tr>
 </table>
+
+## Extension: paper-style prompt selection and DAP
+
+See [my_implementation/README.md](my_implementation/README.md).

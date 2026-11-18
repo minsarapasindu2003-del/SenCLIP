@@ -1,0 +1,6 @@
+venv/
+Datasets/
+Datasets_mini/
+*.ckpt
+__pycache__/
+features_*.pt
