@@ -1,0 +1,104 @@
+{
+    "paper": {
+        "1": {
+            "best": null,
+            "worst": null
+        },
+        "2": {
+            "best": null,
+            "worst": null
+        },
+        "5": {
+            "best": null,
+            "worst": null
+        },
+        "10": {
+            "best": null,
+            "worst": null
+        },
+        "15": {
+            "best": null,
+            "worst": null
+        },
+        "25": {
+            "best": null,
+            "worst": null
+        },
+        "46": {
+            "best": null,
+            "worst": null
+        }
+    },
+    "repo_scale": {
+        "1": {
+            "best": {
+                "top1_accuracy": 63.325923681259155,
+                "top5_accuracy": 94.81852054595947
+            },
+            "worst": {
+                "top1_accuracy": 56.562960147857666,
+                "top5_accuracy": 93.03333163261414
+            }
+        },
+        "2": {
+            "best": {
+                "top1_accuracy": 69.97407674789429,
+                "top5_accuracy": 96.55925631523132
+            },
+            "worst": {
+                "top1_accuracy": 53.44074368476868,
+                "top5_accuracy": 92.40740537643433
+            }
+        },
+        "5": {
+            "best": {
+                "top1_accuracy": 70.333331823349,
+                "top5_accuracy": 96.51111364364624
+            },
+            "worst": {
+                "top1_accuracy": 67.0037031173706,
+                "top5_accuracy": 94.37037110328674
+            }
+        },
+        "10": {
+            "best": {
+                "top1_accuracy": 70.97036838531494,
+                "top5_accuracy": 96.55185341835022
+            },
+            "worst": {
+                "top1_accuracy": 69.57407593727112,
+                "top5_accuracy": 95.64074277877808
+            }
+        },
+        "15": {
+            "best": {
+                "top1_accuracy": 71.29629850387573,
+                "top5_accuracy": 96.80370092391968
+            },
+            "worst": {
+                "top1_accuracy": 70.17777562141418,
+                "top5_accuracy": 96.54074311256409
+            }
+        },
+        "25": {
+            "best": {
+                "top1_accuracy": 70.77777981758118,
+                "top5_accuracy": 96.74814939498901
+            },
+            "worst": {
+                "top1_accuracy": 70.04073858261108,
+                "top5_accuracy": 96.64815068244934
+            }
+        },
+        "46": {
+            "best": {
+                "top1_accuracy": 71.04814648628235,
+                "top5_accuracy": 96.8999981880188
+            },
+            "worst": {
+                "top1_accuracy": 71.04814648628235,
+                "top5_accuracy": 96.8999981880188
+            }
+        }
+    }
+}
