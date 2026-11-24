@@ -1,0 +1,19 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Large files that must NOT go to GitHub (GitHub rejects files > 100 MB)
+checkpoints/
+Datasets/
+data/
+*.ckpt
+*.pt
+*.pth
+*.zip
+*.tar.gz
+
+# Python / Jupyter caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+logs/

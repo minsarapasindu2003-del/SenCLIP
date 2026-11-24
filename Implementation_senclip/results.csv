@@ -1,0 +1,6 @@
+model,Aerial,Ground,Ground+Aerial
+CLIP RN50 (baseline),44.33,28.0,43.0
+Official SenCLIP AvgPool,46.33,10.0,44.33
+Official SenCLIP AttPool,18.0,4.67,26.67
+Mine (no head),22.33,25.33,20.33
+Mine (WITH head),18.0,10.67,15.67

@@ -1,0 +1,6 @@
+Generate 50 extremely short and diverse sentences for EACH of the land-use/land-cover classes below. Each sentence must be a factual visual description of a PHOTO TAKEN FROM THE GROUND over that class. Make the sentences of each class as different as possible from the other classes in the list. Describe visual features or objects likely to be visible, even non-stereotypical ones, covering different seasons and states of the land. Add some examples related to the class. Do not use poetic language, be factual.
+
+Classes: ["Harbour", "Air Port", "Paddy Field"]
+
+Output ONLY valid JSON with no explanation, in exactly this format, using the class names exactly as written as keys:
+{"Harbour": ["sentence 1", "sentence 2"], "Air Port": ["sentence 1", "sentence 2"]}

@@ -1,0 +1,272 @@
+Images (6): ['airport_1.png', 'airport_2.png', 'harbour_1.png', 'harbour_2.png', 'paddyfield_1.png', 'paddyfield_2.png']
+Target classes (3): ['Harbour', 'Air Port', 'Paddy Field']
+Prompts per class per view: 50; kept per class: top-5 by w = alpha/beta (paper Eq. 6-7)
+Note: the prompt ranking does not depend on the image, so it is shown once per model.
+
+==============================================================================
+MODEL: RN50 AvgPool (official)
+
+  [GROUND view] top-5 prompts per class (highest w first)
+    Harbour:
+      1. [w=1.208] Fishing boats are moored beside a concrete quay.
+      2. [w=1.193] Blue fishing boats are pulled onto a slipway.
+      3. [w=1.182] Fishing boats are covered with blue tarpaulins.
+      4. [w=1.171] Several empty fishing boats rest at their berths.
+      5. [w=1.162] A fishing boat carries brightly coloured floats.
+    Air Port:
+      1. [w=1.215] An airport de-icing truck stands beside a jet.
+      2. [w=1.196] A jet bridge connects the terminal to an airplane.
+      3. [w=1.181] A flight information sign hangs outside the terminal.
+      4. [w=1.178] Aircraft winglets are visible above the terminal apron.
+      5. [w=1.176] An airport fire truck is parked near a hangar.
+    Paddy Field:
+      1. [w=1.295] A scarecrow stands among growing rice crops.
+      2. [w=1.253] A buffalo stands in a muddy rice field.
+      3. [w=1.246] Water reflects the sky between rice plants.
+      4. [w=1.240] A farmer sprays water over young rice plants.
+      5. [w=1.234] A farmer carries a bundle of rice stalks.
+
+  [AERIAL view] top-5 prompts per class (highest w first)
+    Harbour:
+      1. [w=1.150] An aerial view reveals rows of fishing boats inside a sheltered basin.
+      2. [w=1.150] An aerial view shows a naval harbour with patrol vessels arranged along secure docks.
+      3. [w=1.147] An aerial view shows several floating docks arranged inside a marina.
+      4. [w=1.146] An aerial view shows fishing vessels clustered around a central pier.
+      5. [w=1.145] An aerial view shows a large shipyard with vessels positioned inside dry docks.
+    Air Port:
+      1. [w=1.178] An aerial view shows an airport with a dedicated aircraft de-icing apron.
+      2. [w=1.177] An aerial photo shows an airport apron covered with parked passenger aircraft.
+      3. [w=1.168] An aerial view reveals a network of taxiways connecting multiple airport terminals.
+      4. [w=1.162] An aerial photo shows a large airport with multiple runways and extensive taxiway networks.
+      5. [w=1.161] An aerial photo shows a terminal apron with aircraft connected to passenger boarding bridges.
+    Paddy Field:
+      1. [w=1.244] A satellite photo shows newly planted rice seedlings forming faint green patterns in water.
+      2. [w=1.225] A satellite photo shows rice plots with irregular yellow patches caused by uneven crop growth.
+      3. [w=1.219] A satellite photo shows rice cultivation arranged in long narrow strips.
+      4. [w=1.213] A satellite photo shows terraced rice cultivation in a mountainous agricultural region.
+      5. [w=1.210] An aerial photo shows rice paddies arranged in stepped terraces along a hillside.
+
+==============================================================================
+MODEL: RN50 AttPool (official)
+
+  [GROUND view] top-5 prompts per class (highest w first)
+    Harbour:
+      1. [w=1.208] Fishing boats are moored beside a concrete quay.
+      2. [w=1.193] Blue fishing boats are pulled onto a slipway.
+      3. [w=1.182] Fishing boats are covered with blue tarpaulins.
+      4. [w=1.171] Several empty fishing boats rest at their berths.
+      5. [w=1.162] A fishing boat carries brightly coloured floats.
+    Air Port:
+      1. [w=1.215] An airport de-icing truck stands beside a jet.
+      2. [w=1.196] A jet bridge connects the terminal to an airplane.
+      3. [w=1.181] A flight information sign hangs outside the terminal.
+      4. [w=1.178] Aircraft winglets are visible above the terminal apron.
+      5. [w=1.176] An airport fire truck is parked near a hangar.
+    Paddy Field:
+      1. [w=1.295] A scarecrow stands among growing rice crops.
+      2. [w=1.253] A buffalo stands in a muddy rice field.
+      3. [w=1.246] Water reflects the sky between rice plants.
+      4. [w=1.240] A farmer sprays water over young rice plants.
+      5. [w=1.234] A farmer carries a bundle of rice stalks.
+
+  [AERIAL view] top-5 prompts per class (highest w first)
+    Harbour:
+      1. [w=1.150] An aerial view reveals rows of fishing boats inside a sheltered basin.
+      2. [w=1.150] An aerial view shows a naval harbour with patrol vessels arranged along secure docks.
+      3. [w=1.147] An aerial view shows several floating docks arranged inside a marina.
+      4. [w=1.146] An aerial view shows fishing vessels clustered around a central pier.
+      5. [w=1.145] An aerial view shows a large shipyard with vessels positioned inside dry docks.
+    Air Port:
+      1. [w=1.178] An aerial view shows an airport with a dedicated aircraft de-icing apron.
+      2. [w=1.177] An aerial photo shows an airport apron covered with parked passenger aircraft.
+      3. [w=1.168] An aerial view reveals a network of taxiways connecting multiple airport terminals.
+      4. [w=1.162] An aerial photo shows a large airport with multiple runways and extensive taxiway networks.
+      5. [w=1.161] An aerial photo shows a terminal apron with aircraft connected to passenger boarding bridges.
+    Paddy Field:
+      1. [w=1.244] A satellite photo shows newly planted rice seedlings forming faint green patterns in water.
+      2. [w=1.225] A satellite photo shows rice plots with irregular yellow patches caused by uneven crop growth.
+      3. [w=1.219] A satellite photo shows rice cultivation arranged in long narrow strips.
+      4. [w=1.213] A satellite photo shows terraced rice cultivation in a mountainous agricultural region.
+      5. [w=1.210] An aerial photo shows rice paddies arranged in stepped terraces along a hillside.
+
+==============================================================================
+MODEL: ViT-B/32 AvgPool (official)
+
+  [GROUND view] top-5 prompts per class (highest w first)
+    Harbour:
+      1. [w=1.170] Fishing boats are moored beside a concrete quay.
+      2. [w=1.161] Fishing boats are covered with blue tarpaulins.
+      3. [w=1.157] Blue fishing boats are pulled onto a slipway.
+      4. [w=1.154] A row of fishing nets lies on the dock.
+      5. [w=1.147] A harbour tugboat moves beside a cargo vessel.
+    Air Port:
+      1. [w=1.188] A jet bridge connects the terminal to an airplane.
+      2. [w=1.178] An airport de-icing truck stands beside a jet.
+      3. [w=1.168] A terminal glass facade overlooks the airport apron.
+      4. [w=1.164] A baggage cart is parked beside an aircraft.
+      5. [w=1.160] An aircraft is parked inside a maintenance hangar.
+    Paddy Field:
+      1. [w=1.223] A farmer removes weeds from a paddy field.
+      2. [w=1.220] A scarecrow stands among growing rice crops.
+      3. [w=1.211] A farmer sprays water over young rice plants.
+      4. [w=1.211] A farmer plants rice seedlings by hand.
+      5. [w=1.208] Water reflects the sky between rice plants.
+
+  [AERIAL view] top-5 prompts per class (highest w first)
+    Harbour:
+      1. [w=1.134] An aerial photo shows a harbour with fishing boats pulled onto adjacent slipways.
+      2. [w=1.133] An aerial view shows fishing vessels clustered around a central pier.
+      3. [w=1.132] An aerial photo shows numerous small fishing boats arranged along narrow jetties.
+      4. [w=1.122] An aerial photo shows a curved marina filled with recreational boats.
+      5. [w=1.114] An aerial photo shows a seasonal fishing harbour with numerous vessels concentrated near the coast.
+    Air Port:
+      1. [w=1.157] An aerial photo shows a terminal apron with aircraft connected to passenger boarding bridges.
+      2. [w=1.155] An aerial photo shows an airport apron covered with parked passenger aircraft.
+      3. [w=1.150] An aerial photo shows aircraft parked on an apron during low-traffic hours.
+      4. [w=1.141] An aerial view shows a regional airport with a single runway and compact terminal.
+      5. [w=1.141] An aerial view reveals aircraft parked in rows along a large terminal apron.
+    Paddy Field:
+      1. [w=1.181] An aerial photo shows bright green rice seedlings arranged in rectangular plots.
+      2. [w=1.178] An aerial view reveals golden and green rice plots during the harvesting season.
+      3. [w=1.170] An aerial photo shows waterlogged rice fields during the monsoon season.
+      4. [w=1.167] A satellite photo shows newly planted rice seedlings forming faint green patterns in water.
+      5. [w=1.162] An aerial photo shows mature rice crops with yellowish vegetation across large plots.
+
+==============================================================================
+MODEL: ViT-B/32 AttPool (official)
+
+  [GROUND view] top-5 prompts per class (highest w first)
+    Harbour:
+      1. [w=1.170] Fishing boats are moored beside a concrete quay.
+      2. [w=1.161] Fishing boats are covered with blue tarpaulins.
+      3. [w=1.157] Blue fishing boats are pulled onto a slipway.
+      4. [w=1.154] A row of fishing nets lies on the dock.
+      5. [w=1.147] A harbour tugboat moves beside a cargo vessel.
+    Air Port:
+      1. [w=1.188] A jet bridge connects the terminal to an airplane.
+      2. [w=1.178] An airport de-icing truck stands beside a jet.
+      3. [w=1.168] A terminal glass facade overlooks the airport apron.
+      4. [w=1.164] A baggage cart is parked beside an aircraft.
+      5. [w=1.160] An aircraft is parked inside a maintenance hangar.
+    Paddy Field:
+      1. [w=1.223] A farmer removes weeds from a paddy field.
+      2. [w=1.220] A scarecrow stands among growing rice crops.
+      3. [w=1.211] A farmer sprays water over young rice plants.
+      4. [w=1.211] A farmer plants rice seedlings by hand.
+      5. [w=1.208] Water reflects the sky between rice plants.
+
+  [AERIAL view] top-5 prompts per class (highest w first)
+    Harbour:
+      1. [w=1.134] An aerial photo shows a harbour with fishing boats pulled onto adjacent slipways.
+      2. [w=1.133] An aerial view shows fishing vessels clustered around a central pier.
+      3. [w=1.132] An aerial photo shows numerous small fishing boats arranged along narrow jetties.
+      4. [w=1.122] An aerial photo shows a curved marina filled with recreational boats.
+      5. [w=1.114] An aerial photo shows a seasonal fishing harbour with numerous vessels concentrated near the coast.
+    Air Port:
+      1. [w=1.157] An aerial photo shows a terminal apron with aircraft connected to passenger boarding bridges.
+      2. [w=1.155] An aerial photo shows an airport apron covered with parked passenger aircraft.
+      3. [w=1.150] An aerial photo shows aircraft parked on an apron during low-traffic hours.
+      4. [w=1.141] An aerial view shows a regional airport with a single runway and compact terminal.
+      5. [w=1.141] An aerial view reveals aircraft parked in rows along a large terminal apron.
+    Paddy Field:
+      1. [w=1.181] An aerial photo shows bright green rice seedlings arranged in rectangular plots.
+      2. [w=1.178] An aerial view reveals golden and green rice plots during the harvesting season.
+      3. [w=1.170] An aerial photo shows waterlogged rice fields during the monsoon season.
+      4. [w=1.167] A satellite photo shows newly planted rice seedlings forming faint green patterns in water.
+      5. [w=1.162] An aerial photo shows mature rice crops with yellowish vegetation across large plots.
+
+==============================================================================
+MODEL: My RN50 AvgPool (trained by me)
+
+  [GROUND view] top-5 prompts per class (highest w first)
+    Harbour:
+      1. [w=1.208] Fishing boats are moored beside a concrete quay.
+      2. [w=1.193] Blue fishing boats are pulled onto a slipway.
+      3. [w=1.182] Fishing boats are covered with blue tarpaulins.
+      4. [w=1.171] Several empty fishing boats rest at their berths.
+      5. [w=1.162] A fishing boat carries brightly coloured floats.
+    Air Port:
+      1. [w=1.215] An airport de-icing truck stands beside a jet.
+      2. [w=1.196] A jet bridge connects the terminal to an airplane.
+      3. [w=1.181] A flight information sign hangs outside the terminal.
+      4. [w=1.178] Aircraft winglets are visible above the terminal apron.
+      5. [w=1.176] An airport fire truck is parked near a hangar.
+    Paddy Field:
+      1. [w=1.295] A scarecrow stands among growing rice crops.
+      2. [w=1.253] A buffalo stands in a muddy rice field.
+      3. [w=1.246] Water reflects the sky between rice plants.
+      4. [w=1.240] A farmer sprays water over young rice plants.
+      5. [w=1.234] A farmer carries a bundle of rice stalks.
+
+  [AERIAL view] top-5 prompts per class (highest w first)
+    Harbour:
+      1. [w=1.150] An aerial view reveals rows of fishing boats inside a sheltered basin.
+      2. [w=1.150] An aerial view shows a naval harbour with patrol vessels arranged along secure docks.
+      3. [w=1.147] An aerial view shows several floating docks arranged inside a marina.
+      4. [w=1.146] An aerial view shows fishing vessels clustered around a central pier.
+      5. [w=1.145] An aerial view shows a large shipyard with vessels positioned inside dry docks.
+    Air Port:
+      1. [w=1.178] An aerial view shows an airport with a dedicated aircraft de-icing apron.
+      2. [w=1.177] An aerial photo shows an airport apron covered with parked passenger aircraft.
+      3. [w=1.168] An aerial view reveals a network of taxiways connecting multiple airport terminals.
+      4. [w=1.162] An aerial photo shows a large airport with multiple runways and extensive taxiway networks.
+      5. [w=1.161] An aerial photo shows a terminal apron with aircraft connected to passenger boarding bridges.
+    Paddy Field:
+      1. [w=1.244] A satellite photo shows newly planted rice seedlings forming faint green patterns in water.
+      2. [w=1.225] A satellite photo shows rice plots with irregular yellow patches caused by uneven crop growth.
+      3. [w=1.219] A satellite photo shows rice cultivation arranged in long narrow strips.
+      4. [w=1.213] A satellite photo shows terraced rice cultivation in a mountainous agricultural region.
+      5. [w=1.210] An aerial photo shows rice paddies arranged in stepped terraces along a hillside.
+
+==============================================================================
+PREDICTIONS PER IMAGE (class, probability)   [OK/WRONG shown when the file name matches a class]
+
+airport_1.png   (expected from file name: Air Port)
+  RN50 AvgPool (official)            ground: Air Port (0.67)  OK | aerial: Air Port (0.66)  OK
+  RN50 AttPool (official)            ground: Air Port (0.99)  OK | aerial: Air Port (0.52)  OK
+  ViT-B/32 AvgPool (official)        ground: Air Port (1.00)  OK | aerial: Air Port (1.00)  OK
+  ViT-B/32 AttPool (official)        ground: Air Port (1.00)  OK | aerial: Air Port (1.00)  OK
+  My RN50 AvgPool (trained by me)    ground: Harbour (0.45)  WRONG | aerial: Paddy Field (0.67)  WRONG
+
+airport_2.png   (expected from file name: Air Port)
+  RN50 AvgPool (official)            ground: Harbour (0.60)  WRONG | aerial: Harbour (0.52)  WRONG
+  RN50 AttPool (official)            ground: Paddy Field (0.92)  WRONG | aerial: Paddy Field (0.98)  WRONG
+  ViT-B/32 AvgPool (official)        ground: Air Port (0.99)  OK | aerial: Air Port (1.00)  OK
+  ViT-B/32 AttPool (official)        ground: Air Port (1.00)  OK | aerial: Air Port (1.00)  OK
+  My RN50 AvgPool (trained by me)    ground: Air Port (0.55)  OK | aerial: Air Port (0.67)  OK
+
+harbour_1.png   (expected from file name: Harbour)
+  RN50 AvgPool (official)            ground: Air Port (0.86)  WRONG | aerial: Air Port (0.72)  WRONG
+  RN50 AttPool (official)            ground: Harbour (0.49)  OK | aerial: Harbour (0.63)  OK
+  ViT-B/32 AvgPool (official)        ground: Air Port (0.67)  WRONG | aerial: Harbour (0.71)  OK
+  ViT-B/32 AttPool (official)        ground: Air Port (0.99)  WRONG | aerial: Air Port (0.97)  WRONG
+  My RN50 AvgPool (trained by me)    ground: Harbour (0.52)  OK | aerial: Paddy Field (0.41)  WRONG
+
+harbour_2.png   (expected from file name: Harbour)
+  RN50 AvgPool (official)            ground: Air Port (1.00)  WRONG | aerial: Air Port (0.97)  WRONG
+  RN50 AttPool (official)            ground: Air Port (1.00)  WRONG | aerial: Air Port (0.87)  WRONG
+  ViT-B/32 AvgPool (official)        ground: Harbour (1.00)  OK | aerial: Harbour (1.00)  OK
+  ViT-B/32 AttPool (official)        ground: Harbour (0.68)  OK | aerial: Harbour (0.72)  OK
+  My RN50 AvgPool (trained by me)    ground: Air Port (0.79)  WRONG | aerial: Paddy Field (0.85)  WRONG
+
+paddyfield_1.png   (expected from file name: Paddy Field)
+  RN50 AvgPool (official)            ground: Paddy Field (0.99)  OK | aerial: Paddy Field (0.99)  OK
+  RN50 AttPool (official)            ground: Paddy Field (1.00)  OK | aerial: Paddy Field (1.00)  OK
+  ViT-B/32 AvgPool (official)        ground: Paddy Field (0.85)  OK | aerial: Paddy Field (0.83)  OK
+  ViT-B/32 AttPool (official)        ground: Paddy Field (0.92)  OK | aerial: Paddy Field (0.92)  OK
+  My RN50 AvgPool (trained by me)    ground: Paddy Field (0.74)  OK | aerial: Paddy Field (0.97)  OK
+
+paddyfield_2.png   (expected from file name: Paddy Field)
+  RN50 AvgPool (official)            ground: Air Port (1.00)  WRONG | aerial: Harbour (0.89)  WRONG
+  RN50 AttPool (official)            ground: Air Port (1.00)  WRONG | aerial: Air Port (0.51)  WRONG
+  ViT-B/32 AvgPool (official)        ground: Paddy Field (0.87)  OK | aerial: Paddy Field (0.99)  OK
+  ViT-B/32 AttPool (official)        ground: Paddy Field (0.76)  OK | aerial: Paddy Field (0.98)  OK
+  My RN50 AvgPool (trained by me)    ground: Air Port (0.62)  WRONG | aerial: Paddy Field (0.59)  OK
+
+==============================================================================
+ACCURACY on images whose file name matches a class
+  RN50 AvgPool (official)            ground: 2/6 | aerial: 2/6
+  RN50 AttPool (official)            ground: 3/6 | aerial: 3/6
+  ViT-B/32 AvgPool (official)        ground: 5/6 | aerial: 6/6
+  ViT-B/32 AttPool (official)        ground: 5/6 | aerial: 5/6
+  My RN50 AvgPool (trained by me)    ground: 3/6 | aerial: 3/6
